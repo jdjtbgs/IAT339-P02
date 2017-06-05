@@ -1,0 +1,132 @@
+<!doctype html> 
+<html lang="en">
+
+<head>
+<meta charset="utf-8"> 
+<title>Style Guide</title>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+
+<link rel= "stylesheet" href="main.css">
+
+</head>
+
+<body>
+<h1>Style Guide</h1>
+
+<a href="branding.html">Brand Definition</a>
+<a href="citations.html">Citations</a>
+<a href="wireframesMobile.html">Mobile Wireframes</a>
+
+
+<h1>Interactive Elements</h1>
+
+<h2>In-Text Link</h2>
+<h3>CSS selector:</h3> a
+<h3>Sample Code:</h3> <code>&lt;a href ="link here"&gt;Text Here&lt;/a&gt;</code>
+<h3>Rendered Element:</h3> <a href=#>Text Here</a>
+
+<h2>Navigation Button</h2>
+<h3>CSS selector:</h3> .nav-button
+<h3>Sample Code:</h3> <code>&lt;button class = "nav-button"&gt;Lipstick&lt;/button&gt;&lt;/code&gt;</code>
+<h3>Rendered Element:</h3> 
+			<button class = "nav-button">Lipstick</button>
+			
+
+<h2>Submit and Reset Buttons</h2>
+<h3>CSS selector:</h3> .main-button
+<h3>Sample Code:</h3> <code> &lt;button class = "main-button"&gt;Submit&lt;/button&gt;</code>
+<h3>Rendered Element:</h3> <button class = "main-button">Submit</button>
+<button class = "main-button">Reset</button>
+
+<h2>Text Input</h2>
+<h3>CSS selector:</h3> input
+<h3>Sample Code:</h3> <code>&lt;label&gt;Name&lt;/label&gt;&lt;input type="text"&gt;</code>
+<h3>Rendered Element:</h3> 
+<form>
+Name
+<br>
+<input type="text" title="text">
+</form>
+
+
+<h1>Text Styling</h1>
+
+<h2>Headings</h2>
+<h3>CSS selector:</h3> h1, h2, h3
+<h3>Sample Code: </h3><code>&lt;h1&gt;Heading One&lt;/h1&gt;</code>
+<h3>Rendered Element:</h3> <h1>Heading One</h1> <h2>Heading Two</h2> <h3>Heading Three</h3>
+
+<h2>Paragraphs</h2>
+<h3>CSS selector:</h3> p
+<h3>Sample Code:</h3> <code>&lt;p&gt;Paragraph here&lt;/p&gt;</code>
+<h3>Rendered Element:</h3> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nunc in mi dignissim maximus id sed leo. Quisque vitae suscipit ante. Duis erat magna, feugiat et scelerisque consequat, ultricies eget mauris. Praesent est lorem, imperdiet vitae interdum eget, feugiat eget erat. Aenean vitae tincidunt diam. Aliquam erat volutpat. Maecenas est dui, aliquam vel massa nec, fermentum volutpat elit. Fusce pulvinar dui libero, at luctus tellus ultrices eget. Quisque ornare, neque non fermentum gravida, erat lorem finibus ipsum, in tincidunt justo nibh a elit. Proin ultricies nibh turpis, et imperdiet mauris efficitur nec. Pellentesque ornare urna non ullamcorper commodo. Vestibulum eleifend fermentum dolor ac blandit.</p>
+
+
+<h2>Bulleted List</h2>
+<h3>CSS selector:</h3> ul
+<h3>Sample Code:</h3><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code>
+<h3>Rendered Element:</h3> <ul><li>Item</li></ul>
+
+<h2>Numbered List</h2>
+<h3>CSS selector:</h3> ol
+<h3>Sample Code:</h3> <code>&lt;ol&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ol&gt;</code>
+<h3>Rendered Element:</h3> <ol><li>Item</li></ol>
+
+<h1>Combined Elements</h1>
+
+<h2>Main Navigation</h2>
+<h3>CSS selector:</h3> .nav-button
+<h3>Sample Code:</h3> <code>&lt;button class = "nav-button"&gt;Lipstick&lt;/button&gt;&lt;/code&gt;</code>
+<h3>Rendered Element:</h3> 
+			<button class = "nav-button">Lipstick</button>
+			<button class = "nav-button">Body Butter</button>
+			<button class = "nav-button">Perfume</button>
+	
+
+<h2>Product Listing</h2>
+<h3>CSS selector:</h3> .product-section
+<h3>Sample Code:</h3> <code>&lt;section class="product-section"&gt;
+&lt;a href="http://placeholder.com"&gt;&lt;img src="http://via.placeholder.com/150"&gt;&lt;/a&gt;
+&lt;br&gt;
+&lt;form&gt;
+Quantity
+&lt;br&gt;
+&lt;input type="text" name="Quantity"&gt; 
+&lt;br&gt; 
+&lt;button class = "main-button"&gt;Add to Cart&lt;/button&gt;&lt;/form&gt;
+&lt;/section&gt;</code>
+<h3>Rendered Element:</h3> <section class="product-section">
+<img src="http://via.placeholder.com/170" alt="placeholder image">
+<br>
+<form>
+Quantity
+<br>
+<input type="text" title="Quantity">
+<br> <button class = "main-button">Add to Cart</button></form>
+</section>
+
+<h2>Web Grid Structure</h2>
+<h3>Sample Code:</h3> <code>&lt;div style="width:77%; height:100px; border:1px solid #000; display:inline-block"*gt;Header Navigation Bar&lt;/div&gt;</code>
+<h3>Rendered Element:</h3>  
+<div style="width:77%; height:100px; border:1px solid #000; display:inline-block">Header Navigation Bar</div>
+<div style="width:25%; height: 100px; border:1px solid #000; display:inline-block;"></div>
+<div style="width:25%; height: 100px; border:1px solid #000; display:inline-block;"></div>
+<div style="width:25%; height: 100px; border:1px solid #000; display:inline-block;"></div>
+<div style="width:25%; height: 100px; border:1px solid #000; display:inline-block;"></div>
+<div style="width:25%; height: 100px; border:1px solid #000; display:inline-block;"></div>
+<div style="width:25%; height: 100px; border:1px solid #000; display:inline-block;"></div>
+<div style="width:25%; height: 100px; border:1px solid #000; display:inline-block;"></div>
+<div style="width:25%; height: 100px; border:1px solid #000; display:inline-block;"></div>
+<div style="width:25%; height: 100px; border:1px solid #000; display:inline-block;"></div>
+
+
+<h2>Colour Swatches</h2>
+<h3>Sample Code:</h3><code> &lt;div style="width:100px;height:100px;background-color: #E93F37; display: inline-block;"&gt;&lt;/div&gt;</code>
+
+<h3>Rendered Element:</h3>
+<div style="width:100px;height:100px;background-color: #E93F37; display: inline-block;"></div>
+<div style="width:100px;height:100px;background-color: white; display: inline-block;"></div>
+<div style="width:100px;height:100px;background-color: black; display: inline-block;"></div>
+</body>
+</html>
