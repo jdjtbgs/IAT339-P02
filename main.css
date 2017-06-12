@@ -1,6 +1,8 @@
 body {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
+	margin-left: 5rem;
+	margin-top: 2rem;
 }
 
 h1, h2, h3{
@@ -39,6 +41,12 @@ img {
 	color: #E93F37;
 	background-color: white; 
 	border: none;
+}
+
+.next{
+	position: absolute;
+	right: 5rem;
+
 }
 
 .nav-button{
@@ -97,6 +105,13 @@ input{
 	width: 25%; 
 	height: 100px; 
 	border: 1px solid #000;
+}
+
+form{
+	display: inline-block;
+	padding-right: 2rem;
+	padding-bottom: 2rem;
+
 }
 
 
