@@ -67,6 +67,7 @@ img {
 	padding-right: 2em;
 	padding-left: 2em;	
 	width: 25%;
+	display: inline-block;
 }
 	
 
@@ -95,6 +96,7 @@ label {
 input{
 	font-size: 1em;
 	font-weight: 300;
+	padding-left: 3em;
 }
 
 .product-section{
@@ -116,10 +118,21 @@ input{
 
 form{
 	display: inline-block;
-	padding-right: 2rem;
-	padding-bottom: 2rem;
+	padding-right: 2em;
+	padding-bottom: 2em;
+	padding-top: 2em;
 
 }
-
+/*@media(max-width: 30em){
+	form{
+		display: inline-block;
+	}
+}
+@media(min-width: : 30em){
+	form{
+		display: inline;
+	}
+}
+*/
 
 
