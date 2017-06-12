@@ -121,5 +121,21 @@ form{
 
 }
 
+.rating{
+	color: #E93F37;
+	font-size: 2rem;
+	background-color: white;
+	border: none;
+}
 
+.rating:hover, .rating:active, .rating:focus{
+	color: white;
+	background-color: #E93F37;
+	transition: background-color .5s ease-in;
+}
+
+.rating:selected{
+	color: white;
+	background-color: #E93F37;
+}
 
