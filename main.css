@@ -32,9 +32,9 @@ img {
 	background-color: #E93F37;
 	border-radius: .25em;
 	border-style: none;
-	padding: .5em;
-	margin-top: .5em;
-	margin-bottom: .5em;
+	padding: .75em;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 .main-button:hover, .main-button:focus{
@@ -46,6 +46,13 @@ img {
 .next{
 	position: absolute;
 	right: 5rem;
+	margin-top: 1rem;
+
+}
+
+.option{
+	margin-right: 1rem;
+	margin-top: 0rem;
 
 }
 
