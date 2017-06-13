@@ -96,7 +96,7 @@ label {
 input{
 	font-size: 1em;
 	font-weight: 300;
-	padding-left: 3em;
+	
 }
 
 .product-section{
@@ -123,16 +123,31 @@ form{
 	padding-top: 2em;
 
 }
-/*@media(max-width: 30em){
-	form{
-		display: inline-block;
+
+.search-form{
+	display: inline-block;
+	padding-right: 2em;
+	padding-bottom: 2em;
+	padding-top: 2em;
+	padding-left: 1em;
+}
+.basket{
+	background-color: white;
+	float: right;
+	padding-right: 2rem;
+	box-shadow: 2px 2px 5px 2px #888888;
+}
+@media(max-width: 100em){
+	.basket{
+		width: 35%;
 	}
 }
-@media(min-width: : 30em){
-	form{
-		display: inline;
+@media(min-width: 100em){
+	.basket{
+		width: 25%;
 	}
 }
+<<<<<<< Updated upstream
 */
 
 .rating{
@@ -153,3 +168,5 @@ form{
 	background-color: #E93F37;
 }
 
+=======
+>>>>>>> Stashed changes
