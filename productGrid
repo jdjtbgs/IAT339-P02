@@ -6,17 +6,44 @@
 	</head>
 
 	<body>
-	
+		<div class="product-grid">
+			<img src="http://via.placeholder.com/170" alt="placeholder image">
+			<img src="http://via.placeholder.com/170" alt="placeholder image">
+			<img src="http://via.placeholder.com/170" alt="placeholder image">
+			<br>
+			<div class ="product-selected">
 				<img src="http://via.placeholder.com/170" alt="placeholder image">
-				
+						
 				<form class="quantity">
-				Quantity
-				<br>
-				<input type="text" title="text">
-				<br> 
-				<button class = "main-button">Add to Cart</button>
+					<select name="quan">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="1">4</option>
+						<option value="2">5</option>
+						<option value="3">6</option>
+						<option value="1">7</option>
+						<option value="2">8</option>
+						<option value="3">9</option>
+						<option value="3">10</option>
+					</select>
+					Quantity
+					<br> 
+					<br>
+					<select name="color">
+						<option value="color1">colour1</option>
+						<option value="color2">colour2</option>
+						<option value="color3">colour3</option>
+					</select>
+					Colour
+					<br>
+					<button class = "main-button">Add to Cart</button>
 				</form>
-
+			</div>
+			<img src="http://via.placeholder.com/170" alt="placeholder image">
+			<img src="http://via.placeholder.com/170" alt="placeholder image">
+			<img src="http://via.placeholder.com/170" alt="placeholder image">
+		</div>
 	</body>
 
 
