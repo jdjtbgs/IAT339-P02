@@ -1,0 +1,24 @@
+<!doctype html> 
+	<html lang="en">
+	<head>
+	<title>productGrid</title>
+	<link rel= "stylesheet" href="main.css">
+	</head>
+
+	<body>
+	
+				<img src="http://via.placeholder.com/170" alt="placeholder image">
+				
+				<form class="quantity">
+				Quantity
+				<br>
+				<input type="text" title="text">
+				<br> 
+				<button class = "main-button">Add to Cart</button>
+				</form>
+
+	</body>
+
+
+
+	</html>

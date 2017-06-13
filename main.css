@@ -153,3 +153,10 @@ form{
 	background-color: #E93F37;
 }
 
+.quantity{
+	position: absolute;
+	margin-left: 1rem;
+	margin-top: 1rem;
+
+
+}
