@@ -176,6 +176,7 @@ form{
 .quantity{
 	position: absolute;
 	margin-left: 1rem;
+	padding-top: 0.5rem;
 
 }
 
@@ -188,9 +189,28 @@ form{
 }
 
 .product-selected{
-
+	display: none;
 	padding-left: 20%;
 	padding-top: 5%;
 	padding-bottom: 5%;
 }
+
+@media only screen and (max-width: 500px){
+	.product-selected{
+		display: inline-block;
+		position: absolute;
+		z-index: 10;
+	}
+.selected-img{
+		display: none;
+	}
+
+	.product-grid{
+		padding-left: none;
+
+	}
+
+	.quantity{
+		position: absolute;
+	}
 }
