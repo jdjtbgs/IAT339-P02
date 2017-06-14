@@ -256,7 +256,9 @@ form{
 
 .product-grid{
 	position: absolute;
+	display: block;
 	margin: auto; 
+	padding-top: 5rem;
 	padding-left: 20%;
 	padding-right: 25%;
 
@@ -269,9 +271,13 @@ form{
 	padding-bottom: 5%;
 }
 
+.billing-form{
+	display: inline-block;
+}
+
 @media only screen and (max-width: 500px){
 	.product-selected{
-		display: inline-block;
+		display: none;
 		position: absolute;
 		z-index: 10;
 	}
@@ -281,10 +287,14 @@ form{
 
 	.product-grid{
 		padding-left: none;
+		margin-left: none;
+		margin-top: 2rem;
 
 	}
 
 	.quantity{
 		position: absolute;
+		margin-left: none;
+		padding-left: none;
 	}
 }
