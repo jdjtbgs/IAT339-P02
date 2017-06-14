@@ -1,0 +1,114 @@
+<!doctype html>
+	<html lang = "en">
+
+	<head>
+		<meta charset="utf-8"> 
+		<title>Shipping</title>
+		<link rel= "stylesheet" href="main.css">
+	</head>
+
+	<body>
+
+		<h1>Shipping Information</h1>
+
+		<h3>Shipping Address</h3>
+
+		<form>
+			Suite #
+			<br>
+			<input type="text" title="text">
+		</form>
+
+		<form>
+			Street Address
+			<br>
+			<input type="text" title="text">
+		</form>
+
+		<form>
+			City
+			<br>
+			<input type="text" title="text">
+		</form>
+
+		<form>
+			Postal Code
+			<br>
+			<input type="text" title="text">
+		</form>
+
+		<form>
+			Phone Number
+			<br>
+			<input type="text" title="text">
+		</form>
+
+		<br>
+
+		<form action="">
+			<input type="checkbox" name="billing?" value="yes" onclick="myFunction()">Is this your billing address?
+		</form>
+
+		<script>
+			function myFunction(){
+				var x = document.getElementById('billingForm');
+				if ( x.style.display === 'none') {
+					x.style.display = 'inline-block'; 
+				} else {
+					x.style.display = 'none';
+				}
+			}
+		</script>
+		<br>
+	<div class="billing-form" id="billingForm">	
+		
+		<h3>Billing Address</h3>
+
+				<form>
+			Suite #
+			<br>
+			<input type="text" title="text">
+		</form>
+
+		<form>
+			Street Address
+			<br>
+			<input type="text" title="text">
+		</form>
+
+		<form>
+			City
+			<br>
+			<input type="text" title="text">
+		</form>
+
+		<form>
+			Postal Code
+			<br>
+			<input type="text" title="text">
+		</form>
+
+		<form>
+			Phone Number
+			<br>
+			<input type="text" title="text">
+		</form>
+
+	</div>
+
+		<h3>Shipping Method</h3>
+		<button class = "option main-button">Option One</button>
+
+		<button class = "option main-button">Option Two</button>
+
+		<button class = "option main-button">Option Three</button>
+
+		<br>
+		<br>
+		<br>
+
+		<button class = "main-button">Back</button>
+
+		<button class = "next main-button">Next</button>
+	</body>	
+</html>
