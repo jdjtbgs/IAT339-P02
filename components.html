@@ -10,8 +10,8 @@
 </head>
 
 <body>
-<div class="grid-structure" style="position:absolute;top:0;left:0;width:100%;">
-		<a class="logo" href="styleguide.html" style="width:4rem;height:auto;padding-top:1rem;display:inline-block;">
+	<div class="nav-grid">
+		<a class="logo" href="styleguide.html" style="width:4rem;height:auto;display:inline-block;">
 			<img src="https://pixy.org/images/placeholder.png" alt="Logo Place Holder">
 		</a>
 		<button class = "nav-button">Lipstick</button>
@@ -21,31 +21,37 @@
 			Search
 			<input type="text" title="Search">
 		</form>
-		<a href="#basket" style="width:2rem;height:auto;padding-right:1rem;padding-top:2rem;padding-left:1rem;">
-			<img src="https://d30y9cdsu7xlg0.cloudfront.net/png/65006-200.png" alt="Basket icon placeholder" >
-		</a>
+		
+		<img src="https://d30y9cdsu7xlg0.cloudfront.net/png/65006-200.png" alt="Basket icon placeholder" style="width:2rem;height:2rem;padding-right:1rem;padding-top:2rem;padding-left:1rem;" onclick="basketExpand()">
+		
 	</div>
-<br>
-<br>
-<br>
-<br>
-	<div class="basket" id="basket">
-		<h3 style="padding-left:1rem;">Your Basket</h3>
+	<script>
+		function basketExpand(){
+			var x = document.getElementById('basketSummary');
+			if (x.style.display === 'none'){
+				x.style.display = 'block';
+			} else{
+				x.style.display = 'none';
+			}
+		}
+	</script>
+	<div class="basket" id="basketSummary">
+		<h3 style="margin-left:1rem;">Your Basket</h3>
 		<div>
 			<img src="https://pixy.org/images/placeholder.png" alt="Product Image Place Holder" style="width:50px;height:50px;padding-top:1rem;padding-left:1rem;display:inline;">
 			<div style="display: inline-block;padding-left:1rem">
-				<p>Item Name</p>
-				<p>Item Quantity 3   --  Item Price: $9.99</p>
+				<p class="subP">Item Name</p>
+				<p class="subP">Item Quantity 3   --  Item Price: $9.99</p>
 			</div>
 		</div>
-			<div>
-				<img src="https://pixy.org/images/placeholder.png" alt="Product Image Place Holder" style="width:50px;height:50px;padding-top:1rem;padding-left:1rem;display:inline-block;">
-				<div style="display: inline-block;padding-left:1rem">
-					<p>Item Name</p>
-					<p>Item Quantity 1   --  Item Price: $9.99</p>
-				</div>
+		<div>
+			<img src="https://pixy.org/images/placeholder.png" alt="Product Image Place Holder" style="width:50px;height:50px;padding-top:1rem;padding-left:1rem;display:inline-block;">
+			<div style="display: inline-block;padding-left:1rem">
+				<p class="subP">Item Name</p>
+				<p class="subP">Item Quantity 1   --  Item Price: $9.99</p>
+			</div>
 		</div>
-		<p style="text-align: right;padding-right:2rem;">Subtotal: $39.96</p>
+		<p class="subP" style="text-align: right;padding-right:2rem;">Subtotal: $39.96</p>
 		<button class="main-button" style="float:right;margin-right:2rem;">Chekcout</button>
 	</div>
 	<div style="height:25rem;">
