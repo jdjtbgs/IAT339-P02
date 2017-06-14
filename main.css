@@ -7,6 +7,8 @@ body {
 h1, h2, h3{
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
+	margin-left: 5rem;
+	margin-top: 2rem;
 }
 
 p{
@@ -15,6 +17,9 @@ p{
 	margin-left: 5rem;
 	margin-top: 2rem;
 	margin-right: 5rem;
+}
+.subP{
+	margin-left:1rem;margin-right:1rem;
 }
 
 li{
@@ -126,6 +131,11 @@ form{
 	padding-top: 2em;
 
 }
+.default-holder{
+	margin-left: 5rem;
+	margin-top: 2rem;
+	margin-right: 5rem;
+}
 .nav-grid{
 	display: flex;
 	flex-wrap: wrap; 
@@ -142,9 +152,12 @@ form{
 	padding-left: 1em;
 }
 .basket{
+	display:none;
 	background-color: white;
-	float: right;
-	padding-right: 2rem;padding-top:2rem;
+	right:2rem;
+	position:absolute;
+	width:40rem;
+	margin-right:2rem;margin-top:2rem;
 	box-shadow: 2px 2px 5px 2px #888888;
 }
 .social-embed{
@@ -182,7 +195,7 @@ form{
 
 @media(max-width: 50em){
 	.basket{
-		width: 35%;
+		width: 50%;
 	}
 	.nav-button{
 		flex: 0 0 100%;
