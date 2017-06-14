@@ -1,8 +1,7 @@
 body {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
-	margin-left: 5rem;
-	margin-top: 2rem;
+	margin:0;
 }
 
 h1, h2, h3{
@@ -13,6 +12,9 @@ h1, h2, h3{
 p{
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
+	margin-left: 5rem;
+	margin-top: 2rem;
+	margin-right: 5rem;
 }
 
 li{
@@ -64,10 +66,11 @@ img {
 	font-weight: 400;
 	font-size: 1.5em;
 	padding: 1em;
-	padding-right: 2em;
-	padding-left: 2em;	
-	width:25%;
+	padding-right: 5%;
+	padding-left: 5%;	
+	width:19%;
 	display: inline-block;
+	margin:auto;
 }
 	
 
@@ -123,7 +126,14 @@ form{
 	padding-top: 2em;
 
 }
-
+.nav-grid{
+	display: flex;
+	flex-wrap: wrap; 
+	width:100%;height:auto;
+	position:relative;
+	padding-top:0;
+	margin-top:0;
+}
 .search-form{
 	display: inline-block;
 	padding-right: 2em;
@@ -134,15 +144,66 @@ form{
 .basket{
 	background-color: white;
 	float: right;
-	padding-right: 2rem;
+	padding-right: 2rem;padding-top:2rem;
 	box-shadow: 2px 2px 5px 2px #888888;
 }
+.social-embed{
+	border-style: solid;
+	border-width: 1px;
+	border-color:lightgrey;
+	width:40%;
+	margin:auto;
+	margin-top:2rem;
+}
+.social-buttons-holder{
+	width:40%;
+	margin:auto;
+	padding-top:1rem;
+	padding-left:25%;padding-right:25%;
+	flex-wrap:nowrap;
+}
+.social-buttons{
+		width:2rem;height:auto;
+		padding-left:20%;
+		display:inline;
+	}
+.products-nav{
+	margin-left: 10%;margin-right:10%;
+	margin-top: 2rem;
+	display: flex;
+	flex-wrap: wrap; 
+}
+.nav-products{
+	width:33%;
+	height:20em;
+}
+
+
+
 @media(max-width: 50em){
 	.basket{
 		width: 35%;
 	}
 	.nav-button{
 		flex: 0 0 100%;
+	}
+	.logo{
+		margin:auto;
+	}
+	.nav-products{
+		flex: 0 0 100%;
+	}
+	.products-nav{
+		margin-left:20%;margin-right:20%;
+	}
+	.social-embed{
+		width:75%;
+	}
+	.social-buttons-holder{
+		padding-left:10%;padding-right:10%;
+	}
+	.social-buttons{
+		padding-left:10%;
 	}
 
 }
