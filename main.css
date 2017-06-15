@@ -12,9 +12,6 @@ h1, h2, h3{
 p{
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
-	margin-left: 5rem;
-	margin-top: 2rem;
-	margin-right: 5rem;
 }
 .subP{
 	margin-left:1rem;margin-right:1rem;
@@ -72,9 +69,9 @@ img {
 	padding: 1em;
 	padding-right: 5%;
 	padding-left: 5%;	
-	width:19%;
+	width:23%;
 	display: inline-block;
-	margin:auto;
+/*	margin:auto;*/
 }
 	
 
