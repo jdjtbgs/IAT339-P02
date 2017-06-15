@@ -275,6 +275,12 @@ form{
 	display: inline-block;
 }
 
+.shipping{
+	margin-left: 10%;
+	margin-top: 10%;
+	margin-left: 10%;
+}
+
 @media only screen and (max-width: 500px){
 	.product-selected{
 		display: none;
