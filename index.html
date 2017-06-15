@@ -19,7 +19,7 @@
 		<button class = "nav-button" onclick="window.location.href='productGrid.html'">Perfume</button>
 		<form class="search-form">
 				<a href="searchResults.html">Search</a>
-				<input class="input1" type="text" title="Search">
+				<input class="input1" type="text" title="Search" onkeydown="searchSubmit()">
 		</form>
 		
 		<img src="https://d30y9cdsu7xlg0.cloudfront.net/png/65006-200.png" alt="Basket icon placeholder" style="width:2rem;height:2rem;padding-right:1rem;padding-top:2rem;padding-left:1rem;" onclick="basketExpand()">
@@ -35,17 +35,14 @@
 			}
 		}
 	</script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
-		$(document).ready(function(){
-			$(".input1").keydown(function(e){
-				if (e.which === 13) {
-					window.location.href = "searchResults.html";
-				}
-			});		
-		});
-		
+		function searchSubmit(e){
+			if(e.which === 13){
+				window.loation.href="searchresults.html";
+			}
+		}
 	</script>
+	
 	<div class="basket" id="basketSummary">
 		<h3 style="margin-left:1rem;">Your Basket</h3>
 		<div>
