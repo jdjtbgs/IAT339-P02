@@ -13,14 +13,9 @@
 		<a class="logo" href="index.html" style="width:4rem;height:auto;display:inline-block;">
 			<img src="https://pixy.org/images/placeholder.png" alt="Logo Place Holder">
 		</a>
-		<a href="lipstick.html">
-			<button class = "nav-button">Lipstick</button>
-		</a>
-		<a href="productGrid.html">
-			<button class = "nav-button">Body Butter</button>
-		</a>
-		<a href="productGrid.html">
-		<button class = "nav-button">Perfume</button>
+		<button class = "nav-button"><a href="lipstick.html">Lipstick</a></button>
+		<button class = "nav-button"><a href="productGrid.html">Body Butter</a></button>
+		<button class = "nav-button"><a href="productGrid.html">Perfume</a></button>
 		<form class="search-form">
 			Search
 			<input type="text" title="Search">
@@ -60,6 +55,124 @@
 			<button class="main-button" style="float:right;margin-right:2rem;">Chekcout</button>
 		</a>
 	</div>
+
+	<h2 style="margin-left:10rem;margin-top:2rem;">Search Terms: search terms</h2>
+	<div style="margin-top:2rem;margin-left:10rem;">
+		<h3 >Filter</h3>
+		<form action ="">
+		<select name="filters">
+		<option value="name">Name</option>
+		<option value="price descending">Price: Lowest</option>
+		<option value="price ascending">Price: Highest</option>
+		</select>
+
+		<input type="submit">
+		</form>
+	</div>
+
+	<div class="product-grid">
+			<img src="http://via.placeholder.com/170" alt="placeholder image" onclick="myFunction1()">
+			
+			<img src="http://via.placeholder.com/170" alt="placeholder image" onclick="myFunction2()">
+			<img src="http://via.placeholder.com/170" alt="placeholder image">
+
+		<div class ="product-selected" id="productDiv1">
+				<img class="selected-img" src="http://via.placeholder.com/130" alt="placeholder image">
+
+				<form class="quantity">
+					<select name="quan">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="1">4</option>
+						<option value="2">5</option>
+						<option value="3">6</option>
+						<option value="1">7</option>
+						<option value="2">8</option>
+						<option value="3">9</option>
+						<option value="3">10</option>
+					</select>
+					Quantity
+					<br> 
+					<br>
+					<select name="color">
+						<option value="color1">colour1</option>
+						<option value="color2">colour2</option>
+						<option value="color3">colour3</option>
+					</select>
+					Colour
+					<br>
+					<button class = "main-button">Add to Cart</button>
+				</form>
+			</div>
+				
+			<div class ="product-selected" id="productDiv2">
+				<img class ="selected-img" src="http://via.placeholder.com/130" alt="placeholder image">
+
+				<form class="quantity">
+					<select name="quan">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="1">4</option>
+						<option value="2">5</option>
+						<option value="3">6</option>
+						<option value="1">7</option>
+						<option value="2">8</option>
+						<option value="3">9</option>
+						<option value="3">10</option>
+					</select>
+					Quantity
+					<br> 
+					<br>
+					<select name="color">
+						<option value="color1">colour1</option>
+						<option value="color2">colour2</option>
+						<option value="color3">colour3</option>
+					</select>
+					Colour
+					<br>
+					<button class = "main-button">Add to Cart</button>
+				</form>
+			</div>
+
+			<br>
+
+			
+		<!-- 	modified from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show -->
+			<script>
+			function myFunction1(){
+				var x = document.getElementById('productDiv1');
+				if ( x.style.display === 'none') {
+					x.style.display = 'block'; 
+				} else {
+					x.style.display = 'none';
+				}
+				var y = document.getElementById('productDiv2');
+				if(y.style.display === 'block'){
+					y.style.display = 'none';
+				}
+			}
+
+			function myFunction2(){
+				var x = document.getElementById('productDiv2');
+				if ( x.style.display === 'none') {
+					x.style.display = 'block'; 
+				} else {
+					x.style.display = 'none';
+				}
+				var y = document.getElementById('productDiv1');
+				if(y.style.display === 'block'){
+					y.style.display = 'none';
+				}
+			}
+
+			</script>
+		
+			<img src="http://via.placeholder.com/170" alt="placeholder image">
+			<img src="http://via.placeholder.com/170" alt="placeholder image">
+			<img src="http://via.placeholder.com/170" alt="placeholder image">
+		</div>
 </body>
 
 </html>

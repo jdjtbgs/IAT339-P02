@@ -14,18 +14,15 @@
 		<a class="logo" href="index.html" style="width:4rem;height:auto;display:inline-block;">
 			<img src="https://pixy.org/images/placeholder.png" alt="Logo Place Holder">
 		</a>
-		<a href="lipstick.html">
-			<button class = "nav-button">Lipstick</button>
-		</a>
-		<a href="productGrid.html">
-			<button class = "nav-button">Body Butter</button>
-		</a>
-		<a href="productGrid.html">
-		<button class = "nav-button">Perfume</button>
-		<form class="search-form">
-			Search
-			<input type="text" title="Search">
-		</form>
+		<button class = "nav-button"><a href="lipstick.html">Lipstick</a></button>
+		<button class = "nav-button"><a href="productGrid.html">Body Butter</a></button>
+		<button class = "nav-button"><a href="productGrid.html">Perfume</a></button>
+		<div onkeypress="return searchSubmit(event)">
+			<form class="search-form">
+				Search
+				<input type="text" title="Search">
+			</form>
+		</div>
 		
 		<img src="https://d30y9cdsu7xlg0.cloudfront.net/png/65006-200.png" alt="Basket icon placeholder" style="width:2rem;height:2rem;padding-right:1rem;padding-top:2rem;padding-left:1rem;" onclick="basketExpand()">
 		
@@ -39,6 +36,14 @@
 				x.style.display = 'none';
 			}
 		}
+		function searchSubmit(e){
+			if((e.keyCode == 13)){
+				this.form.submit();
+				window.location.href = "searchResults.html";
+			}
+		}
+		// Modified from https://stackoverflow.com/questions/4418819/submit-form-on-enter-when-in-text-field?rq=1 and https://stackoverflow.com/questions/27807853/html5-how-to-make-a-form-submit-after-pressing-enter-at-any-of-the-text-inputs
+		
 	</script>
 	<div class="basket" id="basketSummary">
 		<h3 style="margin-left:1rem;">Your Basket</h3>
