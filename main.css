@@ -260,7 +260,7 @@ form{
 	display: block;
 	margin: auto; 
 	padding-top: 5rem;
-	padding-left: 30%;
+	padding-left: 35%;
 	padding-right: 25%;
 
 }
@@ -289,10 +289,25 @@ form{
 	display: inline-block;
 }
 
-@media only screen and (max-width: 500px){
+.product-img{
+	border: none;
+}
+
+.product-img:hover, .product-img:focus, .product-img:active{
+	outline: 1rem;
+	outline-color: #E93F37;
+	border-radius: 1rem;
+	border-image: 1rem;
+	border-width: 1rem;
+	border-color: #E93F37;
+}
+
+@media only screen and (max-width: 800px){
 	.product-selected{
 		display: none;
 		position: absolute;
+		top: 7%;
+		left: 35%;
 		z-index: 10;
 	}
 
@@ -301,9 +316,10 @@ form{
 	}
 
 	.product-grid{
-		padding-left: none;
+		padding-left: 10%;
 		margin-left: none;
 		margin-top: 2rem;
+		display: block;
 
 	}
 

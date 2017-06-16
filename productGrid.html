@@ -7,10 +7,11 @@
 
 	<body>
 		<div class="product-grid">
-			<img src="http://via.placeholder.com/170" alt="placeholder image" onclick="myFunction1()">
+			<img class ="product-img" src="http://via.placeholder.com/170" alt="placeholder image" onclick="myFunction1()">
 			
-			<img src="http://via.placeholder.com/170" alt="placeholder image" onclick="myFunction2()">
-			<img src="http://via.placeholder.com/170" alt="placeholder image">
+			<img class ="product-img" src="http://via.placeholder.com/170" alt="placeholder image" onclick="myFunction2()">
+			
+<!-- 			<img src="http://via.placeholder.com/200" alt="placeholder image"> -->
 
 		<div class ="product-selected" id="productDiv1">
 				<img class="selected-img" src="http://via.placeholder.com/130" alt="placeholder image">
@@ -85,9 +86,7 @@
 					x.style.display = 'none';
 				}
 				var y = document.getElementById('productDiv2');
-				if(y.style.display === 'block'){
 					y.style.display = 'none';
-				}
 			}
 
 			function myFunction2(){
@@ -98,16 +97,14 @@
 					x.style.display = 'none';
 				}
 				var y = document.getElementById('productDiv1');
-				if(y.style.display === 'block'){
 					y.style.display = 'none';
-				}
 			}
 
 			</script>
 		
-			<img src="http://via.placeholder.com/170" alt="placeholder image">
-			<img src="http://via.placeholder.com/170" alt="placeholder image">
-			<img src="http://via.placeholder.com/170" alt="placeholder image">
+			<img class= "product-img" src="http://via.placeholder.com/170" alt="placeholder image">
+			<img class = "product-img" src="http://via.placeholder.com/170" alt="placeholder image">
+<!-- 			<img src="http://via.placeholder.com/200" alt="placeholder image"> -->
 		</div>
 	</body>
 
