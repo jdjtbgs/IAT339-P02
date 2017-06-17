@@ -11,20 +11,22 @@
 
 <body>
 	<div class="nav-grid">
-		<a class="logo" href="index.html" style="width:4rem;height:auto;display:inline-block;">
+		<a class="logo" href="index.html">
 			<img src="https://pixy.org/images/placeholder.png" alt="Logo Place Holder">
 		</a>
 		<button class = "nav-button" onclick="window.location.href='lipstick.html'">Lipstick</button>
 		<button class = "nav-button" onclick="window.location.href='productGrid.html'">Body Butter</button>
-		<button class = "nav-button" onclick="window.location.href='productGrid.html'">Perfume</button>
+		<button class = "nav-button" onclick="window.location.href='productGrid.html'">Perfume</button>	
+		<div class="nav-grid-right">
 		<form class="search-form">
 				<a href="searchResults.html">Search</a>
 				<input class="input1" type="text" title="Search" onkeydown="searchSubmit()">
 		</form>
 		
-		<img src="https://d30y9cdsu7xlg0.cloudfront.net/png/65006-200.png" alt="Basket icon placeholder" style="width:2rem;height:2rem;padding-right:1rem;padding-top:2rem;padding-left:1rem;" onclick="basketExpand()">
-		
+		<img src="https://d30y9cdsu7xlg0.cloudfront.net/png/65006-200.png" alt="Basket icon placeholder" class="basket-icon" onclick="basketExpand()">
 	</div>
+	</div>
+	
 	<script>
 		function basketExpand(){
 			var x = document.getElementById('basketSummary');
@@ -64,7 +66,7 @@
 	</div>
 	<br>
 	<img src="https://pixy.org/images/placeholder.png" alt="Splash Image Placeholder" style="width:100%;height:20em;display:block;margin-top:2rem;">
-	<p class="subP">About company. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis orci, sodales porta eros facilisis, congue dapibus ante. Etiam imperdiet magna erat, ut dictum diam vestibulum ac. Maecenas ut felis aliquet, pulvinar neque non, dictum urna. Pellentesque consequat quam convallis dui blandit hendrerit. Sed magna felis, placerat vitae erat id, suscipit mollis metus. Aenean ornare porta velit et varius. Praesent fermentum sapien ut ex imperdiet tincidunt. </p>
+	<h3 class="subP">About company. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis orci, sodales porta eros facilisis, congue dapibus ante. Etiam imperdiet magna erat, ut dictum diam vestibulum ac. Maecenas ut felis aliquet, pulvinar neque non, dictum urna. Pellentesque consequat quam convallis dui blandit hendrerit. Sed magna felis, placerat vitae erat id, suscipit mollis metus. Aenean ornare porta velit et varius. Praesent fermentum sapien ut ex imperdiet tincidunt. </h3>
 
 	<div class="products-nav">
 		<img class="nav-products" src="https://pixy.org/images/placeholder.png" alt="Navigate to Lipstick">
@@ -75,7 +77,7 @@
 
 	<div>
 		<div class="social-embed">
-			<img src="img/twitter-icon.png" style="width:2rem;height:2rem;padding-left:1rem;padding-top:1rem;">
+			<img class="twitter-icon" src="img/twitter-icon.png">
 			<h3 style="display:inline-block;">Twitter Feed</h3>
 			<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Just got my new lipsticks from <a href="https://twitter.com/hashtag/Succulent?src=hash">#Succulent</a>! Love them! <a href="https://t.co/dPjsHXKHBW">pic.twitter.com/dPjsHXKHBW</a></p>&mdash; jdjtbgs (@jdjtbgs) <a href="https://twitter.com/jdjtbgs/status/874416073767911424">June 13, 2017</a></blockquote>
 			<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

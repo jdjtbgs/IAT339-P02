@@ -71,6 +71,7 @@ img {
 	padding-left: 5%;	
 	width:23%;
 	display: inline-block;
+	top:0;
 /*	margin:auto;*/
 }
 	
@@ -81,6 +82,13 @@ img {
 	background-color: #E93F37;
 	transition: background-color .5s ease-in;
 
+}
+.logo{
+	width:4.5rem;height:4.5rem;
+	padding:0;
+	top:0;
+	display:inline-block;
+	align-self:center;
 }
 .checkout-button-l{
 	float:right;margin-right:20rem;margin-top:2rem;
@@ -143,12 +151,22 @@ form{
 	padding-top:0;
 	margin-top:0;
 }
+.nav-grid-right{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top:0;
+	margin-top:0;
+	top:0;
+	
+}
 .search-form{
 	display: inline-block;
 	padding-right: 2em;
 	padding-bottom: 2em;
-	padding-top: 2em;
+	padding-top: 0;
 	padding-left: 1em;
+	padding:1em;
+	align-self:center;
 }
 .basket{
 	display:none;
@@ -160,13 +178,26 @@ form{
 	box-shadow: 2px 2px 5px 2px #888888;
 	z-index:3;
 }
+.basket-icon{
+	width:30px; height:30px;
+	padding-top:0;
+	align-self: center;
+}
 .social-embed{
 	border-style: solid;
 	border-width: 1px;
 	border-color:lightgrey;
-	width:40%;
+	width:80%;
 	margin:auto;
 	margin-top:2rem;
+}
+.twitter-icon{
+	padding-left:20%;
+	width:2rem;height:2rem;
+	padding-top:1rem;
+}
+.twitter-tweet{
+	padding-left:20%;
 }
 .social-buttons-holder{
 	width:40%;
@@ -192,9 +223,9 @@ form{
 	
 }
 .footer{
-	width:100%;
-	margin-top:2rem;margin-bottom:2rem;margin-left: 30%;margin-right:30%;
-	position:relative;
+	width:90%;
+	margin-top:2rem;margin-bottom:2rem;padding-left: 30%;
+	
 }
 .abs-footer{
 		 position:relative;margin-top:5rem;
@@ -233,6 +264,12 @@ form{
 	}
 	.social-embed{
 		width:75%;
+	}
+	.twitter-icon{
+		padding-left: 10%;
+	}
+	.twitter-tweet{
+		padding-left: 10%
 	}
 	.social-buttons-holder{
 		padding-left:10%;padding-right:10%;
