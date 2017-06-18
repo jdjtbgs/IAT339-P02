@@ -146,14 +146,13 @@ form{
 	margin-right: 5rem;
 }
 .nav-grid{
-	display: block;
+	display: flex;
 	flex-wrap: wrap; 
 	width:100%;height:auto;
 	position:relative;
 	padding-top:0;
 	margin-top:0;
 	top:0;
-	overflow:auto;
 }
 .nav-grid-right{
 	display: flex;
@@ -252,6 +251,9 @@ form{
 
 
 @media(max-width: 50em){
+	.search-form{
+		margin-right: 3em;
+	}
 	.basket{
 		width: 50%;
 	}
@@ -310,6 +312,11 @@ form{
 @media(min-width: 50em){
 	.basket{
 		width: 25%;
+	}
+	.nav-grid-right{
+		position:absolute;
+		right:0;
+		top:0.75em;
 	}
 }
 
