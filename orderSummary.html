@@ -13,16 +13,14 @@
 	<div class="shipping">
 		<h1>Order Summary</h1>
 		<img src="http://via.placeholder.com/130" alt="placeholder image">
-
 		<div class="summary-text">
-		Quantity: ##
-		<br>
-		Colour: name
+			Quantity: ##
+			<br>
+			Colour: name
 		</div>
 		<br>
 
 		<img src="http://via.placeholder.com/130" alt="placeholder image">
-
 		<div class="summary-text">
 			Quantity: ##
 			<br>
@@ -35,35 +33,37 @@
 		<br>
 		<br>
 		<button class = "next main-button" onclick="myFunction()">Confirm</button>
-		<div class="product-selected" id="confirmDiv">
-			<h2>Thanks!</h2>
-			<br>
-			<h3>Please rate your products:</h3>
-			</br>
-			<button class ="rating">1☆</button>
-			<button class ="rating">2☆</button>
-			<button class ="rating">3☆</button>
-			<button class ="rating">4☆</button>
-			<button class ="rating">5☆</button>
-			<br>
-			<form>
+		<br>
+		
+	</div>
+	<div class="product-selected" id="confirmDiv">
+		<h2>Thanks!</h2>
+		<br>
+		<h3>Please rate your products:</h3>
+		<br>
+		<button class ="rating">1☆</button>
+		<button class ="rating">2☆</button>
+		<button class ="rating">3☆</button>
+		<button class ="rating">4☆</button>
+		<button class ="rating">5☆</button>
+		<br>
+		<form>
 			Send Feedback:
 			<br>
 			<textarea name="feedback" cols="40" rows="10"></textarea>
 		</form>
-			<button class = "main-button" onclick="window.location.href='index.html'">Submit</button>
-		</div>
+		<button class = "main-button" onclick="window.location.href='index.html'">Submit</button>
 	</div>
 </body>
 
 <script>
-			function myFunction(){
-				var x = document.getElementById('confirmDiv');
-				x.style.display= 'none';
-				if ( x.style.display === 'none') {
-					x.style.display = 'block'; 
-				} 
-			}
+	function myFunction(){
+		var x = document.getElementById('confirmDiv');
+		x.style.display= 'none';
+		if ( x.style.display === 'none') {
+			x.style.display = 'block'; 
+		} 
+	}
 </script>
 
 </html>

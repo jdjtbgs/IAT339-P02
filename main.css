@@ -373,7 +373,7 @@ form{
 .product-selected{
 	display: none;
 	padding-left: 15%;
-	padding-top: 5%;
+	padding-top: 5em;
 	padding-bottom: 5%;
 }
 
@@ -412,8 +412,10 @@ form{
 		display: none;
 		position: absolute;
 		top: 0.4rem;
-		left: 50%;
-		z-index: 10;
+		/*left: 50%;*/
+		margin-left:5%;
+		margin-top:20rem;
+		/*z-index: 10;*/
 	}
 
 	.selected-img{
