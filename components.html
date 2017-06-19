@@ -17,9 +17,9 @@
 		<button class = "nav-button" onclick="window.location.href='lipstick.html'">Lipstick</button>
 		<button class = "nav-button" onclick="window.location.href='productGrid.html'">Body Butter</button>
 		<button class = "nav-button" onclick="window.location.href='productGrid.html'">Perfume</button>
-		<form class="search-form">
+		<form class="search-form" action="searchResults.html" method="get">
 			<a href="searchResults.html">Search</a>
-			<input type="text" title="Search">
+			<input class="input1" type="text" title="Search" onkeydown="searchSubmit()">
 		</form>
 		
 		<img src="https://d30y9cdsu7xlg0.cloudfront.net/png/65006-200.png" alt="Basket icon placeholder" style="width:2rem;height:2rem;padding-right:1rem;padding-top:2rem;padding-left:1rem;" onclick="basketExpand()">

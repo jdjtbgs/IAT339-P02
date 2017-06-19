@@ -187,6 +187,11 @@ form{
 	padding-top:0;
 	align-self: center;
 }
+.basket-icon:active, .basket-icon:hover, .basket-icon:focus{
+	border-style: solid;
+	border-width: 1px;
+	border-color: #E93F37;
+}
 .social-embed{
 	border-style: solid;
 	border-width: 1px;
