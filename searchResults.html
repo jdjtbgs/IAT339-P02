@@ -16,13 +16,14 @@
 		<button class = "nav-button" onclick="window.location.href='lipstick.html'">Lipstick</button>
 		<button class = "nav-button" onclick="window.location.href='productGrid.html'">Body Butter</button>
 		<button class = "nav-button" onclick="window.location.href='productGrid.html'">Perfume</button>
-		<form class="search-form">
+	</div>
+	<div class="nav-grid-right">
+		<form class="search-form" action="searchResults.html" method="get">
 			<a href="searchResults.html">Search</a>
-			<input type="text" title="Search">
+			<input class="input1" type="text" title="Search">
 		</form>
-		
-		<img src="https://d30y9cdsu7xlg0.cloudfront.net/png/65006-200.png" alt="Basket icon placeholder" style="width:2rem;height:2rem;padding-right:1rem;padding-top:2rem;padding-left:1rem;" onclick="basketExpand()">
-		
+			<img src="img/basket.jpg" alt="Basket icon default" class="basket-icon" onclick="basketExpand()">
+			
 	</div>
 	<script>
 		function basketExpand(){
@@ -54,10 +55,11 @@
 		<button class="main-button" style="float:right;margin-right:2rem;" onclick="window.location.href='basketSummary.html'">Checkout</button>
 	</div>
 
-	<h2 style="margin-left:10rem;margin-top:2rem;">Search Terms: search terms</h2>
+	<h2 style="margin-left:10rem;margin-top:2rem;display:inline-block;">Search Terms: search terms</h2>
 	<div style="margin-top:2rem;float:right;">
+
 		<h3>Filter</h3>
-		<div>
+		<div class="search-filter">
 			<form style="margin-top:1rem;margin-right:5rem;padding:0;" action ="">
 				<select name="filters">
 				<option value="name">Name</option>
@@ -70,7 +72,6 @@
 		</div>
 	</div>
 	<br>
-
 	<div class="product-grid">
 			<img src="http://via.placeholder.com/170" alt="placeholder image" onclick="myFunction1()">
 			
