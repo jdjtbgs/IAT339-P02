@@ -251,7 +251,9 @@ form{
 .subtotal-text-l{
 	text-align: right;margin-right:20rem;
 }
-
+.search-filter{
+	
+}
 
 
 @media(max-width: 60em){
