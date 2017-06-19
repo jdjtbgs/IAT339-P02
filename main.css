@@ -160,6 +160,7 @@ form{
 	align-self: center;
 	padding-top:0;
 	margin-top:0;
+	padding-right:1em;
 	top:0;
 	float:right;
 }
@@ -293,25 +294,22 @@ form{
 	.footer{
 		margin-left:17%; margin-right:17%;
 	}
-	.abs-footer{
+	/*.abs-footer{
 		margin-top:85rem;
-	}
+	}*/
 	.contact-text{
 		width:75%;
 	}
-
-
-
 }
 @media(max-width: 70em){
-	.abs-footer{
-		margin-top:60rem;	
-	}
 	.checkout-button-l{
 		margin-right:5rem;
 	}
 	.subtotal-text-l{
 		margin-right:7rem;
+	}
+	.nav-grid{
+		width:80%;
 	}
 }
 @media(min-width: 50em){
