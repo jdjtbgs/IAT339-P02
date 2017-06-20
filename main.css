@@ -173,6 +173,7 @@ form{
 	padding-left: 1em;
 	padding:1em;
 	align-self:center;
+	margin-right:1em;
 }
 .basket{
 	display:none;
@@ -188,6 +189,7 @@ form{
 	width:25px; height:25px;
 	padding-top:0;
 	align-self: center;
+	margin-right:1em;
 }
 .basket-icon:active, .basket-icon:hover, .basket-icon:focus{
 	border-style:solid;
