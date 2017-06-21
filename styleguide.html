@@ -61,7 +61,8 @@
 			<h2>Paragraphs</h2>
 				<h3>CSS selector:</h3> p
 				<h3>Sample Code:</h3> <code>&lt;p&gt;Paragraph here&lt;/p&gt;</code>
-				<h3>Rendered Element:</h3> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nunc in mi dignissim maximus id sed leo. Quisque vitae suscipit ante. Duis erat magna, feugiat et scelerisque consequat, ultricies eget mauris. Praesent est lorem, imperdiet vitae interdum eget, feugiat eget erat. Aenean vitae tincidunt diam. Aliquam erat volutpat. Maecenas est dui, aliquam vel massa nec, fermentum volutpat elit. Fusce pulvinar dui libero, at luctus tellus ultrices eget. Quisque ornare, neque non fermentum gravida, erat lorem finibus ipsum, in tincidunt justo nibh a elit. Proin ultricies nibh turpis, et imperdiet mauris efficitur nec. Pellentesque ornare urna non ullamcorper commodo. Vestibulum eleifend fermentum dolor ac blandit.</p>
+				<h3>Rendered Element:</h3> 
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nunc in mi dignissim maximus id sed leo. Quisque vitae suscipit ante. Duis erat magna, feugiat et scelerisque consequat, ultricies eget mauris. Praesent est lorem, imperdiet vitae interdum eget, feugiat eget erat. Aenean vitae tincidunt diam. Aliquam erat volutpat. Maecenas est dui, aliquam vel massa nec, fermentum volutpat elit. Fusce pulvinar dui libero, at luctus tellus ultrices eget. Quisque ornare, neque non fermentum gravida, erat lorem finibus ipsum, in tincidunt justo nibh a elit. Proin ultricies nibh turpis, et imperdiet mauris efficitur nec. Pellentesque ornare urna non ullamcorper commodo. Vestibulum eleifend fermentum dolor ac blandit.</p>
 
 
 			<h2>Bulleted List</h2>
@@ -77,35 +78,238 @@
 		<h1>Combined Elements</h1>
 
 			<h2>Main Navigation</h2>
-				<h3>CSS selector:</h3> .nav-button
-				<h3>Sample Code:</h3> <code>&lt;button class = "nav-button"&gt;Lipstick&lt;/button&gt;&lt;/code&gt;</code>
+				<h3>CSS selector:</h3> .nav-button, .logo, .checkout-button-l, .nav-grid, .search-form
+				<h3>Sample Code:</h3> <code>&lt;div class="nav-grid"&gt;
+			&lt;a class="logo" href="index.html" style="width:4rem;height:auto;display:inline-block;"&gt;
+				&lt;img src="img/logo_succulent.png" alt="Logo"&gt;
+			&lt;/a&gt;
+			&lt;button class = "nav-button" onclick="window.location.href='lipstick.html'"&gt;Lipstick&lt;/button&gt;
+			&lt;button class = "nav-button" onclick="window.location.href='lipstick.html'"&gt;Body Butter&lt;/button&gt;
+			&lt;button class = "nav-button" onclick="window.location.href='lipstick.html'"&gt;Perfume&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class="nav-grid-right"&gt;
+			&lt;form class="search-form" action="searchResults.html" method="get"&gt;
+				&lt;a href="searchResults.html"&gt;Search&lt;/a&gt;
+				&lt;input class="input1" type="text" title="Search"&gt;
+			&lt;/form&gt;
+			&lt;img src="img/basket.jpg" alt="Basket icon default" class="basket-icon" onclick="basketExpand()"&gt;
+		
+		&lt;/div&gt;</code>
 				<h3>Rendered Element:</h3> 
-							<button class = "nav-button">Lipstick</button>
-							<button class = "nav-button">Body Butter</button>
-							<button class = "nav-button">Perfume</button>
+			<div class="nav-grid">
+				<a class="logo" href="index.html" style="width:4rem;height:auto;display:inline-block;">
+					<img src="img/logo_succulent.png" alt="Logo">
+				</a>
+				<button class = "nav-button" onclick="window.location.href='lipstick.html'">Lipstick</button>
+				<button class = "nav-button" onclick="window.location.href='lipstick.html'">Body Butter</button>
+				<button class = "nav-button" onclick="window.location.href='lipstick.html'">Perfume</button>
+			
+				<form class="search-form" action="searchResults.html" method="get">
+					<a href="searchResults.html">Search</a>
+					<input class="input1" type="text" title="Search">
+				</form>
+				<img src="img/basket.jpg" alt="Basket icon default" class="basket-icon" onclick="basketExpand()">
+			
+			</div>
 					
 
 			<h2>Product Listing</h2>
-				<h3>CSS selector:</h3> .product-section
-				<h3>Sample Code:</h3> <code>&lt;section class="product-section"&gt;
-				&lt;a href="http://placeholder.com"&gt;&lt;img src="http://via.placeholder.com/150"&gt;&lt;/a&gt;
+				<h3>CSS selector:</h3> .product-grid, .product-selected, .product-img, .quantity, 
+				<h3>Sample Code:</h3> <code>&lt;div class="product-grid"&gt;
+				&lt;img class ="product-img" src="http://via.placeholder.com/170" alt="placeholder image" onclick="myFunction1()"&gt;
+				
+				&lt;img class ="product-img" src="http://via.placeholder.com/170" alt="placeholder image" onclick="myFunction2()"&gt;
+
+			&lt;div class ="product-selected" id="productDiv1"&gt;
+					&lt;img class="selected-img" src="http://via.placeholder.com/130" alt="placeholder image"&gt;
+
+					&lt;form class="quantity"&gt;
+						&lt;select name="quan"&gt;
+							&lt;option value="1"&gt;1&lt;/option&gt;
+							&lt;option value="2"&gt;2&lt;/option&gt;
+							&lt;option value="3"&gt;3&lt;/option&gt;
+							&lt;option value="1"&gt;4&lt;/option&gt;
+							&lt;option value="2"&gt;5&lt;/option&gt;
+							&lt;option value="3"&gt;6&lt;/option&gt;
+							&lt;option value="1"&gt;7&lt;/option&gt;
+							&lt;option value="2"&gt;8&lt;/option&gt;
+							&lt;option value="3"&gt;9&lt;/option&gt;
+							&lt;option value="3"&gt;10&lt;/option&gt;
+						&lt;/select&gt;
+						Quantity
+						&lt;br&gt; 
+						&lt;br&gt;
+						&lt;select name="color"&gt;
+							&lt;option value="color1"&gt;colour1&lt;/option&gt;
+							&lt;option value="color2"&gt;colour2&lt;/option&gt;
+							&lt;option value="color3"&gt;colour3&lt;/option&gt;
+						&lt;/select&gt;
+						Colour
+						&lt;br&gt;
+						&lt;button class = "main-button"&gt;Add to Cart&lt;/button&gt;
+					&lt;/form&gt;
+				&lt;/div&gt;
+					
+				&lt;div class ="product-selected" id="productDiv2"&gt;
+					&lt;img class ="selected-img" src="http://via.placeholder.com/130" alt="placeholder image"&gt;
+
+					&lt;form class="quantity"&gt;
+						&lt;select name="quan"&gt;
+							&lt;option value="1"&gt;1&lt;/option&gt;
+							&lt;option value="2"&gt;2&lt;/option&gt;
+							&lt;option value="3"&gt;3&lt;/option&gt;
+							&lt;option value="1"&gt;4&lt;/option&gt;
+							&lt;option value="2"&gt;5&lt;/option&gt;
+							&lt;option value="3"&gt;6&lt;/option&gt;
+							&lt;option value="1"&gt;7&lt;/option&gt;
+							&lt;option value="2"&gt;8&lt;/option&gt;
+							&lt;option value="3"&gt;9&lt;/option&gt;
+							&lt;option value="3"&gt;10&lt;/option&gt;
+						&lt;/select&gt;
+						Quantity
+						&lt;br&gt; 
+						&lt;br&gt;
+						&lt;select name="color"&gt;
+							&lt;option value="color1"&gt;colour1&lt;/option&gt;
+							&lt;option value="color2"&gt;colour2&lt;/option&gt;
+							&lt;option value="color3"&gt;colour3&lt;/option&gt;
+						&lt;/select&gt;
+						Colour
+						&lt;br&gt;
+						&lt;button class = "main-button"&gt;Add to Cart&lt;/button&gt;
+					&lt;/form&gt;
+				&lt;/div&gt;
+
 				&lt;br&gt;
-				&lt;form&gt;
-				Quantity
-				&lt;br&gt;
-				&lt;input type="text" name="Quantity"&gt; 
-				&lt;br&gt; 
-				&lt;button class = "main-button"&gt;Add to Cart&lt;/button&gt;&lt;/form&gt;
-				&lt;/section&gt;</code>
-				<h3>Rendered Element:</h3> <section class="product-section">
-				<img src="http://via.placeholder.com/170" alt="placeholder image">
+
+				
+			&lt;!-- 	modified from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show --&gt;
+				&lt;script&gt;
+				function myFunction1(){
+					var x = document.getElementById('productDiv1');
+					if ( x.style.display === 'none') {
+						x.style.display = 'block'; 
+					} else {
+						x.style.display = 'none';
+					}
+					var y = document.getElementById('productDiv2');
+						y.style.display = 'none';
+				}
+
+				function myFunction2(){
+					var x = document.getElementById('productDiv2');
+					if ( x.style.display === 'none') {
+						x.style.display = 'block'; 
+					} else {
+						x.style.display = 'none';
+					}
+					var y = document.getElementById('productDiv1');
+						y.style.display = 'none';
+				}
+
+				&lt;/script&gt;
+			
+				&lt;img class= "product-img" src="http://via.placeholder.com/170" alt="placeholder image"&gt;
+				&lt;img class = "product-img" src="http://via.placeholder.com/170" alt="placeholder image"&gt;		
+			&lt;/div&gt;</code>
+				<h3>Rendered Element:</h3> 
+				<div class="product-grid">
+				<img class ="product-img" src="http://via.placeholder.com/170" alt="placeholder image" onclick="myFunction1()">
+				
+				<img class ="product-img" src="http://via.placeholder.com/170" alt="placeholder image" onclick="myFunction2()">
+
+			<div class ="product-selected" id="productDiv1">
+					<img class="selected-img" src="http://via.placeholder.com/130" alt="placeholder image">
+
+					<form class="quantity">
+						<select name="quan">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="1">4</option>
+							<option value="2">5</option>
+							<option value="3">6</option>
+							<option value="1">7</option>
+							<option value="2">8</option>
+							<option value="3">9</option>
+							<option value="3">10</option>
+						</select>
+						Quantity
+						<br> 
+						<br>
+						<select name="color">
+							<option value="color1">colour1</option>
+							<option value="color2">colour2</option>
+							<option value="color3">colour3</option>
+						</select>
+						Colour
+						<br>
+						<button class = "main-button">Add to Cart</button>
+					</form>
+				</div>
+					
+				<div class ="product-selected" id="productDiv2">
+					<img class ="selected-img" src="http://via.placeholder.com/130" alt="placeholder image">
+
+					<form class="quantity">
+						<select name="quan">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="1">4</option>
+							<option value="2">5</option>
+							<option value="3">6</option>
+							<option value="1">7</option>
+							<option value="2">8</option>
+							<option value="3">9</option>
+							<option value="3">10</option>
+						</select>
+						Quantity
+						<br> 
+						<br>
+						<select name="color">
+							<option value="color1">colour1</option>
+							<option value="color2">colour2</option>
+							<option value="color3">colour3</option>
+						</select>
+						Colour
+						<br>
+						<button class = "main-button">Add to Cart</button>
+					</form>
+				</div>
+
 				<br>
-				<form>
-				Quantity
-				<br>
-				<input type="text" title="Quantity">
-				<br> <button class = "main-button">Add to Cart</button></form>
-				</section>
+
+				
+			<!-- 	modified from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show -->
+				<script>
+				function myFunction1(){
+					var x = document.getElementById('productDiv1');
+					if ( x.style.display === 'none') {
+						x.style.display = 'block'; 
+					} else {
+						x.style.display = 'none';
+					}
+					var y = document.getElementById('productDiv2');
+						y.style.display = 'none';
+				}
+
+				function myFunction2(){
+					var x = document.getElementById('productDiv2');
+					if ( x.style.display === 'none') {
+						x.style.display = 'block'; 
+					} else {
+						x.style.display = 'none';
+					}
+					var y = document.getElementById('productDiv1');
+						y.style.display = 'none';
+				}
+
+				</script>
+			
+				<img class= "product-img" src="http://via.placeholder.com/170" alt="placeholder image">
+				<img class = "product-img" src="http://via.placeholder.com/170" alt="placeholder image">		
+			</div>
 
 			<h2>Web Grid Structure</h2>
 				<h3>Sample Code:</h3> <code>&lt;div style="width:77%; height:100px; border:1px solid #000; display:inline-block"*gt;Header Navigation Bar&lt;/div&gt;</code>

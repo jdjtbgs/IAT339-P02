@@ -1,101 +1,101 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<title>Welcome to Succulent</title>
-	<link rel="stylesheet" href="main.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
-	
-</head>
-
-<body>
-	<div class="nav-grid">
-		<a class="logo" href="index.html">
-			<img src="https://pixy.org/images/placeholder.png" alt="Logo Place Holder">
-		</a>
-		<button class = "nav-button" onclick="window.location.href='lipstick.html'">Lipstick</button>
-		<button class = "nav-button" onclick="window.location.href='lipstick.html'">Body Butter</button>
-		<button class = "nav-button" onclick="window.location.href='lipstick.html'">Perfume</button>	
-			
-	</div>
-	<div class="nav-grid-right">
-		<form class="search-form" action="searchResults.html" method="get">
-			<a href="searchResults.html">Search</a>
-			<input class="input1" type="text" title="Search">
-		</form>
-			<img src="img/basket.jpg" alt="Basket icon default" class="basket-icon" onclick="basketExpand()">
-			
-	</div>
-
-	<script>
-		function basketExpand(){
-			var x = document.getElementById('basketSummary');
-			if (x.style.display === 'none'){
-				x.style.display = 'block';
-			} else{
-				x.style.display = 'none';
-			}
-		}
-	</script>
-		
-	<div class="basket" id="basketSummary">
-		<h3 style="margin-left:1rem;display:inline-block;">Your Basket</h3>
-		<img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-circled-128.png" alt="basket-close" onclick="basketExpand()" style="width:25px;height:25px;float:right;margin-right:1em;margin-top:1em;">
-		<div>
-			<img src="https://pixy.org/images/placeholder.png" alt="Product Image Place Holder" style="width:50px;height:50px;padding-top:1rem;padding-left:1rem;display:inline;">
-			<div style="display: inline-block;padding-left:1rem">
-				<p class="minorP">Item Name</p>
-				<p class="minorP">Item Quantity 3   --  Item Price: $9.99</p>
-			</div>
-		</div>
-		<div>
-			<img src="https://pixy.org/images/placeholder.png" alt="Product Image Place Holder" style="width:50px;height:50px;padding-top:1rem;padding-left:1rem;display:inline-block;">
-			<div style="display: inline-block;padding-left:1rem">
-				<p class="minorP">Item Name</p>
-				<p class="minorP">Item Quantity 5   --  Item Price: $9.99</p>
-			</div>
-		</div>
-		<p class="minorP" style="text-align: right;padding-right:1rem;">Subtotal: $39.96</p>
-		<button class="main-button" style="float:right;margin-right:2rem;" onclick="window.location.href='basketSummary.html'">Checkout</button>
-	</div>
-	<img src="img/main_splash.jpg" alt="Splash Image Succulent" style="width:100%;height:auto;display:block;">
-	<h3 class="subP">About company. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis orci, sodales porta eros facilisis, congue dapibus ante. Etiam imperdiet magna erat, ut dictum diam vestibulum ac. Maecenas ut felis aliquet, pulvinar neque non, dictum urna. Pellentesque consequat quam convallis dui blandit hendrerit. Sed magna felis, placerat vitae erat id, suscipit mollis metus. Aenean ornare porta velit et varius. Praesent fermentum sapien ut ex imperdiet tincidunt. </h3>
-
-	<div class="products-nav">
-		<img class="nav-products" src="img/lipstick_nav.jpg" alt="Navigate to Lipstick">
-		<img class="nav-products" src="img/butter_nav.jpg" alt="Navigate to Body Butter">
-		<img class="nav-products" src="img/perfume.jpg" alt="Navigate to Perfume">
-		
-	</div>
-
-	<div>
-		<div class="social-embed">
-			<img class="twitter-icon" src="img/twitter-icon.png">
-			<h3 style="display:inline-block;">Twitter Feed</h3>
-			<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Just got my new lipsticks from <a href="https://twitter.com/hashtag/Succulent?src=hash">#Succulent</a>! Love them! <a href="https://t.co/dPjsHXKHBW">pic.twitter.com/dPjsHXKHBW</a></p>&mdash; jdjtbgs (@jdjtbgs) <a href="https://twitter.com/jdjtbgs/status/874416073767911424">June 13, 2017</a></blockquote>
-			<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-		</div>
-		<!-- <div class="social-buttons-holder">
-			<a href="https://www.instagram.com/make.up.vines/?hl=en">
-				<img class="social-buttons" src="https://maxcdn.icons8.com/Share/icon/win8/Logos//instagram_new1600.png" >
-			</a>
-			<a href="https://www.facebook.com/lushcosmetics/">
-				<img class="social-buttons" src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" >
-			</a>
-			<a href="https://www.pinterest.com/search/pins/?q=make%20up&rs=typed&term_meta[]=make%7Ctyped&term_meta[]=up%7Ctyped">
-				<img class="social-buttons" src="img/pinterest-icon.ico">
-			</a>
-		</div> -->
-	</div>
-	<div class="footer">
-		<div class="social-text" style="margin-left:7%;"><a href="https://twitter.com/lushcosmetics">Twitter</a></div> 
-		<div class="social-text"><a href="https://www.instagram.com/make.up.vines/?hl=en">Instagram</a></div> 
-		<div class="social-text"><a href="https://www.facebook.com/lushcosmetics/">Facebook</a></div> 
-		<div class="social-text"><a href="https://www.pinterest.com/search/pins/?q=make%20up&rs=typed&term_meta[]=make%7Ctyped&term_meta[]=up%7Ctyped">Pinterest</a></div>
-		<br>
-		<div class="contact-text"><p>Contact us. info@succulent.com 123-456-7890 Come see us 1234 Burrard St. Vancouver, BC</p></div>
-	</div>
-</body>
-
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Welcome to Succulent</title>
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+	
+</head>
+
+<body>
+	<div class="nav-grid">
+		<a class="logo" href="index.html">
+			<img src="img/logo_succulent.png" alt="Logo">
+		</a>
+		<button class = "nav-button" onclick="window.location.href='lipstick.html'">Lipstick</button>
+		<button class = "nav-button" onclick="window.location.href='lipstick.html'">Body Butter</button>
+		<button class = "nav-button" onclick="window.location.href='lipstick.html'">Perfume</button>	
+			
+	</div>
+	<div class="nav-grid-right">
+		<form class="search-form" action="searchResults.html" method="get">
+			<a href="searchResults.html">Search</a>
+			<input class="input1" type="text" title="Search">
+		</form>
+			<img src="img/basket.jpg" alt="Basket icon default" class="basket-icon" onclick="basketExpand()">
+			
+	</div>
+
+	<script>
+		function basketExpand(){
+			var x = document.getElementById('basketSummary');
+			if (x.style.display === 'none'){
+				x.style.display = 'block';
+			} else{
+				x.style.display = 'none';
+			}
+		}
+	</script>
+		
+	<div class="basket" id="basketSummary">
+		<h3 style="margin-left:1rem;display:inline-block;">Your Basket</h3>
+		<img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-circled-128.png" alt="basket-close" onclick="basketExpand()" style="width:25px;height:25px;float:right;margin-right:1em;margin-top:1em;">
+		<div>
+			<img src="img/classic_white.jpg" alt="Classic Lipstick" style="width:50px;height:50px;padding-top:1rem;padding-left:1rem;display:inline;">
+			<div style="display: inline-block;padding-left:1rem">
+				<p class="minorP">Item Name</p>
+				<p class="minorP">Item Quantity 3   --  Item Price: $9.99</p>
+			</div>
+		</div>
+		<div>
+			<img src="img/crayon_white.jpg" alt="Lipstick Crayon" style="width:50px;height:50px;padding-top:1rem;padding-left:1rem;display:inline-block;">
+			<div style="display: inline-block;padding-left:1rem">
+				<p class="minorP">Item Name</p>
+				<p class="minorP">Item Quantity 5   --  Item Price: $9.99</p>
+			</div>
+		</div>
+		<p class="minorP" style="text-align: right;padding-right:1rem;">Subtotal: $39.96</p>
+		<button class="main-button" style="float:right;margin-right:2rem;" onclick="window.location.href='basketSummary.html'">Checkout</button>
+	</div>
+	<img src="img/main_splash.jpg" alt="Splash Image Succulent" style="width:100%;height:auto;display:block;">
+	<h3 class="subP">Your body is organic and so are our products! At Succulent we think beauty should be delicious and natural, just like you. We have a range of edible lipsticks, body butters, and  perfumes that make your body taste as good as it looks. Are products let you indulge while maintaining a healthy balance with the environment, unlike our competitors who use nasty chemicals, we have 100% natural products that are nutritious and fun.</h3>
+
+	<div class="products-nav">
+		<img class="nav-products" src="img/lipstick_nav.jpg" alt="Navigate to Lipstick">
+		<img class="nav-products" src="img/butter_nav.jpg" alt="Navigate to Body Butter">
+		<img class="nav-products" src="img/perfume.jpg" alt="Navigate to Perfume">
+		
+	</div>
+
+	<div>
+		<div class="social-embed">
+			<img class="twitter-icon" src="img/twitter-icon.png">
+			<h3 style="display:inline-block;">Twitter Feed</h3>
+			<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Just got my new lipsticks from <a href="https://twitter.com/hashtag/Succulent?src=hash">#Succulent</a>! Love them! <a href="https://t.co/dPjsHXKHBW">pic.twitter.com/dPjsHXKHBW</a></p>&mdash; jdjtbgs (@jdjtbgs) <a href="https://twitter.com/jdjtbgs/status/874416073767911424">June 13, 2017</a></blockquote>
+			<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>
+		<!-- <div class="social-buttons-holder">
+			<a href="https://www.instagram.com/make.up.vines/?hl=en">
+				<img class="social-buttons" src="https://maxcdn.icons8.com/Share/icon/win8/Logos//instagram_new1600.png" >
+			</a>
+			<a href="https://www.facebook.com/lushcosmetics/">
+				<img class="social-buttons" src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" >
+			</a>
+			<a href="https://www.pinterest.com/search/pins/?q=make%20up&rs=typed&term_meta[]=make%7Ctyped&term_meta[]=up%7Ctyped">
+				<img class="social-buttons" src="img/pinterest-icon.ico">
+			</a>
+		</div> -->
+	</div>
+	<div class="footer">
+		<div class="social-text" style="margin-left:7%;"><a href="https://twitter.com/lushcosmetics">Twitter</a></div> 
+		<div class="social-text"><a href="https://www.instagram.com/make.up.vines/?hl=en">Instagram</a></div> 
+		<div class="social-text"><a href="https://www.facebook.com/lushcosmetics/">Facebook</a></div> 
+		<div class="social-text"><a href="https://www.pinterest.com/search/pins/?q=make%20up&rs=typed&term_meta[]=make%7Ctyped&term_meta[]=up%7Ctyped">Pinterest</a></div>
+		<br>
+		<div class="contact-text"><p>Contact us. info@succulent.com 123-456-7890 Come see us 1234 Burrard St. Vancouver, BC</p></div>
+	</div>
+</body>
+
 </html>
