@@ -1,175 +1,105 @@
 <!doctype html>
-
 <html lang="en">
 
-
-
 <head>
-
 	<meta charset="utf-8">
-
+	<meta name="viewport" content="width=device-width", initial-scale="1">
 	<title>Basket Summary</title>
-
 	<link rel="stylesheet" href="main.css">
-
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
-
-	
 
 </head>
 
-
-
 <body>
-
 	<div class="nav-grid">
-
-		<a class="logo" href="index.html" style="width:4rem;height:auto;display:inline-block;">
-
-			<img src="img/logo_succulent.png" alt="Logo">
-
-		</a>
+		<img class="logo" src="img/logo_succulent.png" alt="Logo" onclick="window.location.href='index.html'">
 
 		<button class = "nav-button" onclick="window.location.href='lipstick.html'">Lipstick</button>
-
 		<button class = "nav-button" onclick="window.location.href='lipstick.html'">Body Butter</button>
-
 		<button class = "nav-button" onclick="window.location.href='lipstick.html'">Perfume</button>
-
 	</div>
 
 	<div class="nav-grid-right">
-
 		<form class="search-form" action="searchResults.html" method="get">
-
 			<a href="searchResults.html">Search</a>
-
 			<input class="input1" type="text" title="Search" name="search">
-
 		</form>
 
-			<img src="img/basket.jpg" alt="Basket icon default" class="basket-icon" onclick="basketExpand()">
-
-			
-
+		<img src="img/basket.jpg" alt="Basket icon default" class="basket-icon" onclick="basketExpand()">
 	</div>
 
 	<script>
-
 		function basketExpand(){
-
 			var x = document.getElementById('basketSummary');
-
 			if (x.style.display === 'none'){
-
 				x.style.display = 'block';
-
 			} else{
-
 				x.style.display = 'none';
-
 			}
-
 		}
-
 	</script>
 
 	<div class="basket" id="basketSummary">
-
 		<h3 style="margin-left:1rem;display:inline-block;">Your Basket</h3>
 
 		<img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-circled-128.png" alt="basket-close" onclick="basketExpand()" style="width:25px;height:25px;float:right;margin-right:1em;margin-top:1em;">
 
 		<div>
-
 			<img src="img/classic_white.jpg" alt="Classic Lipstick" style="width:50px;height:50px;padding-top:1rem;padding-left:1rem;display:inline;">
 
 			<div style="display: inline-block;padding-left:1rem">
-
 				<p class="minorP">Classic Lipstick</p>
-
 				<p class="minorP">Item Quantity 3   --  Item Price: $9.99</p>
-
 			</div>
 
 		</div>
 
 		<div>
-
 			<img src="img/crayon_white.jpg" alt="Lipstick Crayon" style="width:50px;height:50px;padding-top:1rem;padding-left:1rem;display:inline-block;">
-
+			
 			<div style="display: inline-block;padding-left:1rem">
-
 				<p class="minorP">Lipstick Crayon</p>
-
 				<p class="minorP">Item Quantity 1   --  Item Price: $9.99</p>
-
 			</div>
-
 		</div>
 
 		<p class="minorP" style="text-align: right;padding-right:1rem;">Subtotal: $39.96</p>
 
 		<button class="main-button" style="float:right;margin-right:2rem;" onclick="window.location.href='basketSummary.html'">Checkout</button>
-
 	</div>
-
-
 
 	<h1 style="display:inline-block;padding-left:15rem;">Your Basket</h1>
 
-
-
 	<button class="main-button checkout-button-l" onclick="window.location.href='shipping.html'">Checkout</button>
-
-	
 
 	<div class="default-holder">
 
 		<div>
-
 			<img src="img/classic_white.jpg" alt="Classic Lipstick"  style="width:125px;height:125px;padding-top:1rem;padding-left:10rem;display:inline-block;">
 
 			<form style="margin-top:1rem;" class="quantity">
-
 					<select name="quan">
-
 						<option value="1">1</option>
-
 						<option value="2">2</option>
-
 						<option selected="selected" value="3">3</option>
-
 						<option value="1">4</option>
-
 						<option value="2">5</option>
-
 						<option value="3">6</option>
-
 						<option value="1">7</option>
-
 						<option value="2">8</option>
-
 						<option value="3">9</option>
-
 						<option value="3">10</option>
-
 					</select>
 
 					Quantity
 
 					<br> 
-
 					<br>
 
 					<select name="color">
-
 						<option value="color1">Cherry</option>
-
 						<option selected="selected" value="color2">Grapefruit</option>
-
 						<option value="color3">Strawberry</option>
-
 					</select>
 
 					Colour
@@ -177,65 +107,42 @@
 					<br>
 
 					<button class = "main-button">Remove from Basket</button>
-
 				</form>
 
-			<div style="display: inline-block;padding-left:1rem">
-
-				<!-- <p class="subP">Item Name</p>
-
-				<p class="subP">Item Quantity 3   --  Item Price: $9.99</p> -->
-
-				
-
-			</div>
+			<!-- <div style="display: inline-block;padding-left:1rem">
+				<p class="subP">Item Name</p>
+				<p class="subP">Item Quantity 3   --  Item Price: $9.99</p>
+			</div> -->
 
 		</div>
 
 			<div>
-
 				<img src="img/crayon_white.jpg" alt="Lipstick Crayon" style="width:125px;height:125px;padding-top:1rem;padding-left:10rem;display:inline-block;">
 
 				<form style="margin-top:1rem;" class="quantity">
 
 					<select name="quan">
-
 						<option selected="selected" value="1">1</option>
-
 						<option value="2">2</option>
-
 						<option value="3">3</option>
-
 						<option value="1">4</option>
-
 						<option value="2">5</option>
-
 						<option value="3">6</option>
-
 						<option value="1">7</option>
-
 						<option value="2">8</option>
-
 						<option value="3">9</option>
-
 						<option value="3">10</option>
-
 					</select>
 
 					Quantity
 
 					<br> 
-
 					<br>
 
 					<select name="color">
-
 						<option value="color1">Pomegranate</option>
-
 						<option value="color2">Apricot</option>
-
 						<option selected="selected" value="color3">Peach</option>
-
 					</select>
 
 					Colour
@@ -247,17 +154,12 @@
 				</form>
 				<!-- Dropdown box made with modification from https://stackoverflow.com/questions/5698754/how-do-i-preselect-in-a-drop-down-list-box -->
 
-				<div style="display: inline-block;padding-left:1rem">
-
-					<!-- <p>Item Name</p>
-
-					<p>Item Quantity 1   --  Item Price: $9.99</p> -->
-
-				</div>
+				<!-- <div style="display: inline-block;padding-left:1rem">
+					<p>Item Name</p>
+					<p>Item Quantity 1   --  Item Price: $9.99</p>
+				</div> -->
 
 		</div>
-
-		
 
 	</div>
 
@@ -266,7 +168,5 @@
 	<button class="main-button checkout-button-l" onclick="window.location.href='shipping.html'">Checkout</button>
 
 </body>
-
-
 
 </html>

@@ -1,15 +1,15 @@
 <!doctype html> 
 	<html lang="en">
 	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width", initial-scale="1">
 	<title>productGrid</title>
 	<link rel= "stylesheet" href="main.css">
 	</head>
 
 	<body>
 		<div class="nav-grid">
-			<a class="logo" href="index.html" style="width:4rem;height:auto;display:inline-block;">
-				<img src="img/logo_succulent.png" alt="Logo">
-			</a>
+			<img class="logo" src="img/logo_succulent.png" alt="Logo" onclick="window.location.href='index.html'">
 			<button class = "nav-button" onclick="window.location.href='lipstick.html'">Lipstick</button>
 			<button class = "nav-button" onclick="window.location.href='lipstick.html'">Body Butter</button>
 			<button class = "nav-button" onclick="window.location.href='lipstick.html'">Perfume</button>
@@ -36,134 +36,120 @@
 		<h3 style="margin-left:1rem;display:inline-block;">Your Basket</h3>
 		<img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-circled-128.png" alt="basket-close" onclick="basketExpand()" style="width:25px;height:25px;float:right;margin-right:1em;margin-top:1em;">
 		<div>
-
 			<img src="img/classic_white.jpg" alt="Classic Lipstick" style="width:50px;height:50px;padding-top:1rem;padding-left:1rem;display:inline;">
-
 			<div style="display: inline-block;padding-left:1rem">
-
 				<p class="minorP">Classic Lipstick</p>
-
 				<p class="minorP">Item Quantity 3   --  Item Price: $9.99</p>
-
 			</div>
-
 		</div>
 
 		<div>
-
 			<img src="img/crayon_white.jpg" alt="Lipstick Crayon" style="width:50px;height:50px;padding-top:1rem;padding-left:1rem;display:inline-block;">
-
 			<div style="display: inline-block;padding-left:1rem">
-
 				<p class="minorP">Lipstick Crayon</p>
-
 				<p class="minorP">Item Quantity 1   --  Item Price: $9.99</p>
-
 			</div>
-
 		</div>
 		<p class="minorP" style="text-align: right;padding-right:1rem;">Subtotal: $39.96</p>
 		<button class="main-button" style="float:right;margin-right:2rem;" onclick="window.location.href='basketSummary.html'">Checkout</button>
 	</div>
-		<img src="img/splash_lipstick.jpg" alt="Splash Image lipstick" style="width:100%;height: 25%; display:block;">
+		<img src="img/splash_lipstick.jpg" alt="Splash Image lipstick" style="width:100%;height:25%; display:block;">
 
 		<div class="product-description">
 			<h3>Succulent lipsticks are 100% organic, 100% edible, and 100% delicious. Look and taste like peach, for yourself or others, in four classic lipstick styles.</h3>
 		</div>
 
 		<div class="product-grid">
-
 			<img class ="product-img" src="img/lipstick_classic.jpg" width="200" height="200" alt="Classic Lipstick image" onclick="myFunction1()">
-			
 			<img class ="product-img" src="img/lipstick_crayon.jpg" width="200" height="200" alt="Lipstick Crayon image" onclick="myFunction2()">
 
-		<div class ="product-selected" id="productDiv1">
-				<img class="selected-img" src="img/classic_white.jpg" width="150" height="150" alt="Classic Lipstick image">
+			<div class ="product-selected" id="productDiv1">
+					<img class="selected-img" src="img/classic_white.jpg" width="150" height="150" alt="Classic Lipstick image">
 
-				<form class="quantity">
-					<select name="quan">
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="1">4</option>
-						<option value="2">5</option>
-						<option value="3">6</option>
-						<option value="1">7</option>
-						<option value="2">8</option>
-						<option value="3">9</option>
-						<option value="3">10</option>
-					</select>
-					Quantity
-					<br> 
-					<br>
-					<select name="colour">
-						<option value="color1">Grapefruit</option>
-						<option value="color2">Strawberry</option>
-						<option value="color3">Peach</option>
-					</select>
-					Colour
-					<br>
-					<button class = "main-button">Add to Cart</button>
-				</form>
-			</div>
+					<form class="quantity">
+						<select name="quan">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="1">4</option>
+							<option value="2">5</option>
+							<option value="3">6</option>
+							<option value="1">7</option>
+							<option value="2">8</option>
+							<option value="3">9</option>
+							<option value="3">10</option>
+						</select>
+						Quantity
+						<br> 
+						<br>
+						<select name="colour">
+							<option value="color1">Grapefruit</option>
+							<option value="color2">Strawberry</option>
+							<option value="color3">Peach</option>
+						</select>
+						Colour
+						<br>
+						<button class = "main-button">Add to Cart</button>
+					</form>
+				</div>
 				
-			<div class ="product-selected" id="productDiv2">
-				<img class ="selected-img" src="img/crayon_white.jpg" width="150" height="150" alt="Lipstick crayon image">
+				<div class ="product-selected" id="productDiv2">
+					<img class ="selected-img" src="img/crayon_white.jpg" width="150" height="150" alt="Lipstick crayon image">
 
-				<form class="quantity">
-					<select name="quan">
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="1">4</option>
-						<option value="2">5</option>
-						<option value="3">6</option>
-						<option value="1">7</option>
-						<option value="2">8</option>
-						<option value="3">9</option>
-						<option value="3">10</option>
-					</select>
-					Quantity
-					<br> 
-					<br>
-					<select name="Colour">
-						<option value="color1">Grapefruit</option>
-						<option value="color2">Strawberry</option>
-						<option value="color3">Peach</option>
-					</select>
-					Colour
-					<br>
-					<button class = "main-button">Add to Cart</button>
-				</form>
-			</div>
+					<form class="quantity">
+						<select name="quan">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="1">4</option>
+							<option value="2">5</option>
+							<option value="3">6</option>
+							<option value="1">7</option>
+							<option value="2">8</option>
+							<option value="3">9</option>
+							<option value="3">10</option>
+						</select>
+						Quantity
+						<br> 
+						<br>
+						<select name="Colour">
+							<option value="color1">Grapefruit</option>
+							<option value="color2">Strawberry</option>
+							<option value="color3">Peach</option>
+						</select>
+						Colour
+						<br>
+						<button class = "main-button">Add to Cart</button>
+					</form>
+				</div>
+
 
 			<br>
 
 			
 		<!-- 	modified from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show -->
 			<script>
-			function myFunction1(){
-				var x = document.getElementById('productDiv1');
-				if ( x.style.display === 'none') {
-					x.style.display = 'block'; 
-				} else {
-					x.style.display = 'none';
+				function myFunction1(){
+					var x = document.getElementById('productDiv1');
+					if ( x.style.display === 'none') {
+						x.style.display = 'block'; 
+					} else {
+						x.style.display = 'none';
+					}
+					var y = document.getElementById('productDiv2');
+						y.style.display = 'none';
 				}
-				var y = document.getElementById('productDiv2');
-					y.style.display = 'none';
-			}
 
-			function myFunction2(){
-				var x = document.getElementById('productDiv2');
-				if ( x.style.display === 'none') {
-					x.style.display = 'block'; 
-				} else {
-					x.style.display = 'none';
+				function myFunction2(){
+					var x = document.getElementById('productDiv2');
+					if ( x.style.display === 'none') {
+						x.style.display = 'block'; 
+					} else {
+						x.style.display = 'none';
+					}
+					var y = document.getElementById('productDiv1');
+						y.style.display = 'none';
 				}
-				var y = document.getElementById('productDiv1');
-					y.style.display = 'none';
-			}
-
 			</script>
 		
 			<img class= "product-img" src="img/liquid_lipstick.jpg" width="200" height="200" alt="Liquid lipstick image">
@@ -172,16 +158,17 @@
 	<br>
 	
 	<div class="footer">
-		<div class="social-text" style="margin-left:7%;"><p>Twitter</p></div> 
-		<div class="social-text"><p>Instagram</p></div> 
-		<div class="social-text"><p>Facebook</p></div> 
-		<div class="social-text"><p>Pinterest</p></div>
+		<div class="social-text" style="margin-left:7%;"><a href="https://twitter.com/lushcosmetics">Twitter</a></div> 
+		<div class="social-text"><a href="https://www.instagram.com/make.up.vines/?hl=en">Instagram</a></div> 
+		<div class="social-text"><a href="https://www.facebook.com/lushcosmetics/">Facebook</a></div> 
+		<div class="social-text"><a href="https://www.pinterest.com/search/pins/?q=make%20up&rs=typed&term_meta[]=make%7Ctyped&term_meta[]=up%7Ctyped">Pinterest</a></div>
+
 		<br>
+
 		<div class="contact-text"><p>Contact us. info@succulent.com 123-456-7890 Come see us 1234 Burrard St. Vancouver, BC</p></div>
+
 	</div>
 
 	</body>
-
-
 
 	</html>

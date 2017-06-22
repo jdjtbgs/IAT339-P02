@@ -15,7 +15,7 @@ p{
 }
 .subP{
 	margin-left:20%;margin-right:20%;
-	margin-top:1em; margin-bottom:3em;
+	margin-top:2em; margin-bottom:2em;
 }
 .minorP{
 	margin-left:10%;margin-right:10%;
@@ -206,7 +206,7 @@ form{
 	border-color:lightgrey;
 	width:80%;
 	margin:auto;
-	margin-top:3rem;
+	margin-top:4em;
 }
 .twitter-icon{
 	padding-left:20%;
@@ -363,6 +363,7 @@ form{
 	padding-top: 1rem;
 	padding-left: 31%;
 	padding-right: 20%;
+	margin-left:5%;
 
 }
 

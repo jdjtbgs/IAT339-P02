@@ -1,54 +1,53 @@
 <!doctype html>
-	<html lang = "en">
+<html lang = "en">
 
-	<head>
-		<meta charset="utf-8"> 
-		<title>Payment</title>
-		<link rel= "stylesheet" href="main.css">
-	</head>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width", initial-scale="1">
+	<title>Payment</title>
+	<link rel= "stylesheet" href="main.css">
+</head>
 
-	<body>
-		<div class="shipping">
-			<h1>Payment Information</h1>
-			
+<body>
+	<div class="shipping">
+		<h1>Payment Information</h1>
+		
+		<br>
+
+		<h3>Card Type</h3>
+		<button class = "option main-button">Visa</button>
+		<button class = "option main-button">Mastercard</button>
+		<button class = "option main-button">American Express</button>
+
+		<br> 
+
+		<h3>Card Information</h3>
+
+		<form>
+			Card Number
 			<br>
+			<input type="text" title="Card Number">
+		</form>
 
-			<h3>Card Type</h3>
-			<button class = "option main-button">Visa</button>
-
-			<button class = "option main-button">Mastercard</button>
-
-			<button class = "option main-button">American Express</button>
-
-			<br> 
-
-			<h3>Card Information</h3>
-
-			<form>
-				Card Number
-				<br>
-				<input type="text" title="Card Number">
-			</form>
-
-			<form>
-				Name on Card
-				<br>
-				<input type="text" title="Name on Card">
-			</form>
-
-			<form>
-				Expiry Date
-				<br>
-				<input type="text" title="Expiry Date" placeholder="dd/mm/yyyy">
-			</form>
-
+		<form>
+			Name on Card
 			<br>
-			<br>
-			<br>
+			<input type="text" title="Name on Card">
+		</form>
 
-			<button class = "main-button" onclick="window.location.href='shipping.html'">Back</button>
+		<form>
+			Expiry Date
+			<br>
+			<input type="text" title="Expiry Date" placeholder="dd/mm/yyyy">
+		</form>
 
-			<button class = "next main-button" onclick="window.location.href='orderSummary.html'">Next</button>
-		</div>
-	</body>	
+		<br>
+		<br>
+		<br>
+
+		<button class = "main-button" onclick="window.location.href='shipping.html'">Back</button>
+
+		<button class = "next main-button" onclick="window.location.href='orderSummary.html'">Next</button>
+	</div>
+</body>	
 </html>
