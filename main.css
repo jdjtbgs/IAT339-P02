@@ -260,6 +260,14 @@ form{
 .subtotal-text-l{
 	text-align: right;margin-right:20rem;
 }
+.guideImg{
+	height:500px;
+	width:auto;
+}
+.styleBody{
+	margin-left:10%;
+	margin-bottom:5em;
+}
 
 /*Phone screen size: ~72em; iPad screen size: ~136em*/
 

@@ -9,7 +9,7 @@
 	<link rel= "stylesheet" href="main.css">
 </head>
 
-<body>
+<body class="styleBody">
 	<h1>Style Guide</h1>
 
 	<a href="branding.html">Brand Definition</a>
@@ -44,7 +44,7 @@
 			<form>
 			Name
 			<br>
-			<input type="text" title="text">
+			<input type="text" title="text input">
 			</form>
 
 
@@ -59,7 +59,7 @@
 			<h3>CSS selector:</h3> p
 			<h3>Sample Code:</h3> <code>&lt;p&gt;Paragraph here&lt;/p&gt;</code>
 			<h3>Rendered Element:</h3> 
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nunc in mi dignissim maximus id sed leo. Quisque vitae suscipit ante. Duis erat magna, feugiat et scelerisque consequat, ultricies eget mauris. Praesent est lorem, imperdiet vitae interdum eget, feugiat eget erat. Aenean vitae tincidunt diam. Aliquam erat volutpat. Maecenas est dui, aliquam vel massa nec, fermentum volutpat elit. Fusce pulvinar dui libero, at luctus tellus ultrices eget. Quisque ornare, neque non fermentum gravida, erat lorem finibus ipsum, in tincidunt justo nibh a elit. Proin ultricies nibh turpis, et imperdiet mauris efficitur nec. Pellentesque ornare urna non ullamcorper commodo. Vestibulum eleifend fermentum dolor ac blandit.</p>
+			<p class="subP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nunc in mi dignissim maximus id sed leo. Quisque vitae suscipit ante. Duis erat magna, feugiat et scelerisque consequat, ultricies eget mauris. Praesent est lorem, imperdiet vitae interdum eget, feugiat eget erat. Aenean vitae tincidunt diam. Aliquam erat volutpat. Maecenas est dui, aliquam vel massa nec, fermentum volutpat elit. Fusce pulvinar dui libero, at luctus tellus ultrices eget. Quisque ornare, neque non fermentum gravida, erat lorem finibus ipsum, in tincidunt justo nibh a elit. Proin ultricies nibh turpis, et imperdiet mauris efficitur nec. Pellentesque ornare urna non ullamcorper commodo. Vestibulum eleifend fermentum dolor ac blandit.</p>
 
 
 		<h2>Bulleted List</h2>
@@ -75,11 +75,9 @@
 	<h1>Combined Elements</h1>
 
 		<h2>Main Navigation</h2>
-			<h3>CSS selector:</h3> .nav-button, .logo, .checkout-button-l, .nav-grid, .search-form
+			<h3>CSS selector:</h3> .nav-button, .logo, .nav-grid, .search-form, .basket
 			<h3>Sample Code:</h3> <code>&lt;div class="nav-grid"&gt;
-		&lt;a class="logo" href="index.html" style="width:4rem;height:auto;display:inline-block;"&gt;
-			&lt;img src="img/logo_succulent.png" alt="Logo"&gt;
-		&lt;/a&gt;
+		&lt;img class="logo" src="img/logo_succulent.png" alt="Logo" onclick="window.location.href='index.html'"&gt;
 		&lt;button class = "nav-button" onclick="window.location.href='lipstick.html'"&gt;Lipstick&lt;/button&gt;
 		&lt;button class = "nav-button" onclick="window.location.href='lipstick.html'"&gt;Body Butter&lt;/button&gt;
 		&lt;button class = "nav-button" onclick="window.location.href='lipstick.html'"&gt;Perfume&lt;/button&gt;
@@ -94,9 +92,7 @@
 	&lt;/div&gt;</code>
 			<h3>Rendered Element:</h3> 
 		<div class="nav-grid">
-			<a class="logo" href="index.html" style="width:4rem;height:auto;display:inline-block;">
-				<img src="img/logo_succulent.png" alt="Logo">
-			</a>
+			<img class="logo" src="img/logo_succulent.png" alt="Logo" onclick="window.location.href='index.html'">
 			<button class = "nav-button" onclick="window.location.href='lipstick.html'">Lipstick</button>
 			<button class = "nav-button" onclick="window.location.href='lipstick.html'">Body Butter</button>
 			<button class = "nav-button" onclick="window.location.href='lipstick.html'">Perfume</button>
@@ -108,6 +104,30 @@
 			<img src="img/basket.jpg" alt="Basket icon default" class="basket-icon" onclick="basketExpand()">
 		
 		</div>
+
+		<h2>Footer</h2>
+			<h3>CSS selector:</h3> .footer, .social-text, .contact-text
+			<h3>Sample Code:</h3> <code>&lt;div class="footer"&gt;
+			&lt;div class="social-text" style="margin-left:7%;"&gt; &lt;a href="https://twitter.com/lushcosmetics"&gt;Twitter&lt;/a&gt; &lt;/div&gt; 
+			&lt;div class="social-text"&gt; &lt;a href="https://www.instagram.com/make.up.vines/?hl=en"&gt;Instagram&lt;/a&gt; &lt;/div&gt; 
+			&lt;div class="social-text"&gt; &lt;a href="https://www.facebook.com/lushcosmetics/"&gt;Facebook&lt;/a&gt; &lt;/div&gt;
+			&lt;div class="social-text"&gt; &lt;a href="https://www.pinterest.com/"&gt;Pinterest&lt;/a&gt; &lt;/div&gt;
+			&lt;br&gt;
+			&lt;div class="contact-text"&gt; &lt;p&gt;Contact us. info@succulent.com 123-456-7890 Come see us 1234 Burrard St. Vancouver, BC&lt;/p&gt; &lt;a href="styleguide.html"&gt;Style Guide&lt;/a&gt;  &lt;a href="citations.html"&gt;Citations&lt;/a&gt; &lt;/div&gt;
+		&lt;/div&gt;
+			</code>
+			<h3>Rendered Element:</h3>
+			<div class="footer">
+				<div class="social-text" style="margin-left:7%;"><a href="https://twitter.com/lushcosmetics">Twitter</a></div> 
+				<div class="social-text"><a href="https://www.instagram.com/make.up.vines/?hl=en">Instagram</a></div> 
+				<div class="social-text"><a href="https://www.facebook.com/lushcosmetics/">Facebook</a></div> 
+				<div class="social-text"><a href="https://www.pinterest.com/">Pinterest</a></div>
+
+				<br>
+
+				<div class="contact-text"><p>Contact us. info@succulent.com 123-456-7890 Come see us 1234 Burrard St. Vancouver, BC</p><a href="styleguide.html">Style Guide</a>  <a href="citations.html">Citations</a></div>
+
+			</div>
 				
 
 		<h2>Product Listing</h2>
