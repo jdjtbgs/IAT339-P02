@@ -152,7 +152,7 @@ form{
 .nav-grid{
 	display: flex;
 	flex-wrap: wrap; 
-	width:100%;height:auto;
+	width:95%;height:auto;
 	position:relative;
 	padding-top:0;
 	margin-top:0;
@@ -167,9 +167,10 @@ form{
 	padding-right:1em;
 	top:0;
 	float:right;
+	width:28%;
 }
 .search-form{
-	display: inline-block;
+	display: inline;
 	padding-right: 2em;
 	padding-bottom: 2em;
 	padding-top: 0;
@@ -177,7 +178,6 @@ form{
 	padding:1em;
 	margin-left:5%;
 	align-self:center;
-	margin-right:1em;
 }
 .basket{
 	display:none;
@@ -190,10 +190,13 @@ form{
 	z-index:3;
 }
 .basket-icon{
+	display:inline;
 	width:25px; height:25px;
 	padding-top:0;
+	padding:0.5em;
 	align-self: center;
 	margin-right:1em;
+	float:right;
 }
 .basket-icon:active, .basket-icon:hover, .basket-icon:focus{
 	border-style:solid;
@@ -262,14 +265,15 @@ form{
 
 @media(max-width: 60em){
 	.nav-grid-right{
-		margin-right: 10%;
+		margin:auto;
+		width:100%;
 	}
 	.search-form{
 		margin-right: 4em;
 		margin-left: 10%;
 	}
 	.basket-icon{
-		margin-left:3em;
+		margin-left:5em;
 	}
 	.basket{
 		width: 50%;
